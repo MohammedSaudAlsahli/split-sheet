@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "split-sheet"
+version = "0.1.0"
+description = "A terminal tool to split csv file to multiple sheets"
+authors = ["Mohammed Alsahli <contact@alsahli.dev>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.2"
+openpyxl = "^3.1.4"
+numbers-parser = "^4.11.4"
+typer = "^0.12.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+split-sheet = "split_sheet.main:app"
